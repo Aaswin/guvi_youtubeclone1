@@ -4,7 +4,6 @@ import { Video } from 'src/app/shared/models/search.interface';
 import { AuthService } from 'src/app/auth/auth.service';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-search-container',
   templateUrl: './search-container.component.html',
@@ -37,12 +36,22 @@ export class SearchContainerComponent {
         this.loading = false;
       });
   }
-  async onSubmit()
+  async LogOutSubmit()
   {
       
       this.loading = true;
       this.authService.SignOut();
       this.router.navigate(['login']);
       console.log('logged out');
+  }
+  async ProfileSubmit()
+  {
+      this.router.navigate(['profile']);
+      console.log('profile');
+  }
+  async ChannelsSubmit()
+  {
+      this.router.navigate(['channel']);
+      console.log('channel');
   }
 }

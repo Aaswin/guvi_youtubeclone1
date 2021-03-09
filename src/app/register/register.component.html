@@ -1,4 +1,10 @@
-﻿<h2>Register</h2>
+﻿<nav class="navbar navbar-dark bg-primary">
+    <div class="navbar-nav">
+        <p text-align: center>welcome to Dummy YouTube </p>
+    </div>
+</nav>
+<h2>Register</h2>
+<div class="col-sm-6 offset-sm-3">
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
         <label for="firstName">First Name</label>
@@ -37,3 +43,4 @@
         <a routerLink="/login" class="btn btn-link">Cancel</a>
     </div>
 </form>
+</div>

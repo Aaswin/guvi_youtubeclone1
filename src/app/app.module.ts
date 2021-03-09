@@ -15,6 +15,7 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
+import { ChannelsComponent } from './channels/channels.component';
 
 var firebaseConfig = {
   apiKey: "AIzaSyACdk8xpgS-PemeqtyRDkCLZ-F_lBEr34M",
@@ -35,7 +36,8 @@ var firebaseConfig = {
     LoginComponent,
     RegisterComponent,
     UserProfileComponent,
-    ForgotpasswordComponent
+    ForgotpasswordComponent,
+    ChannelsComponent
   ],
   imports: [
     HttpClientModule,

@@ -2,8 +2,20 @@
   <div class="navbar-nav">
       <a class="nav-item nav-link">Dummy Youtube</a>
       <a class="nav-item nav-link" routerLink="/videoSearch">Home</a>
-      <button class="nav-item"  (ngSubmit)="onSubmit()">Logout</button>
+      <li class="nav-item dropdown my-2 my-sm-0">
+        <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/profile">Profile</a>
+          <a class="dropdown-item" (click)="LogOutSubmit()">Logout</a>
+          <a class="dropdown-item"  (click)="ChannelsSubmit()">My Channel</a>
+        </div>
+      </li>
+     
+      
   </div>
+  
 </nav>
 
 <div>
