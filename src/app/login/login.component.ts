@@ -37,7 +37,6 @@ export class LoginComponent implements OnInit
         }
         this.loading = true;
         this.authService.SignIn(this.loginForm.controls['username'].value,this.loginForm.controls['password'].value);
-        this.router.navigate(['videoSearch']);
-        console.log('got form');
+        console.log('trying to login');
     }
 }
